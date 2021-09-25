@@ -1,0 +1,175 @@
+:root{
+    /* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary */
+
+--Darkcyan: hsl(185, 75%, 39%);
+--Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+--Darkgrayishblue: hsl(227, 10%, 46%);
+
+/* ### Neutral */
+
+--Darkgray: hsl(0, 0%, 59%);
+
+/* ## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--Darkcyan);
+    font-family: 'Kumbh Sans';
+    overflow: hidden;
+}
+
+
+/* Contenedor */
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+    place-content: center;
+    /* overflow: scroll; */
+}
+
+
+/* Fondo */
+
+.top, .bottom{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+}
+
+.bottom{
+    bottom: -30%;
+    right: -40%;
+}
+
+.top{
+    top: -30%;
+    left: -40%;
+}
+
+
+/* tarjeta */
+
+
+
+.tarjeta{
+width: 95%;
+height: auto;
+margin: 10rem auto 2rem ;
+z-index: 1;
+place-content: center;
+display: flex;
+flex-direction: column;
+box-shadow: -.4rem 1.1rem 2.5rem 0rem hsl(227, 10%, 46%);
+}
+
+@media (min-width: 769px) {
+    .tarjeta{
+        width: 40%;
+        height: auto;
+        box-shadow: -.4rem 1.1rem 2.5rem 0rem hsl(227, 10%, 46%)
+    }
+}
+
+
+
+.tarjeta__top{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+/* tarjeta informacion */
+
+.contenedor__informacion{
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.tarjeta__nombre{
+    text-align: center;
+    margin: 4rem 0 4rem;
+}
+
+.letra--max{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--Verydarkdesaturatedblue);
+    margin: auto;
+}
+
+.letra--minus{
+    font-weight: 400;
+    color: var(--Darkgrayishblue);
+}
+
+
+
+/* tarjeta contadores */
+
+.tarjeta__contadores{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.fotos, .followers, .likes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* imagen */
+
+.contenedor__foto{
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem;
+}
+
+.foto{
+    border-radius: 6rem;
+    border: .5rem solid white;
+}
+
+
+/* footer */
+
+.attribution{
+    text-align: center;
+}
+
+
+
+
+
